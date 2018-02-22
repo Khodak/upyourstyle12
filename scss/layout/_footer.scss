@@ -1,0 +1,91 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+footer {
+	text-align:left;
+	width:100%;
+	min-width: $min-width;
+	order: 3;	
+    -webkit-order: 3;	
+}
+.site-footer {
+    background-color: #4a4a4a;
+    color: white;
+    padding-top: 30px;
+    .row {
+    	margin-bottom: 60px;
+	}
+	.info{
+	    text-align: justify; 
+	    color: #afb0b1;
+	}
+
+	ul {
+	    list-style-type: none;
+	    padding-left: 0;
+	    line-height: 1.7;
+	}
+
+	h2 {
+	    text-align: center;
+	    color: #fff;
+	}
+
+	.logo{
+	    margin-top: 10px;
+	}
+
+	.second-bar .logo a{
+	    color:white;
+	    font-size: 28px;
+	    float: left;
+	    font-weight: bold;
+	    line-height: 68px;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	a,
+	p {
+	    color: #fff;
+	    text-decoration: none;
+	    font-size: 24px;
+	}
+	a {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	a:hover,
+	a:focus {
+	    text-decoration: none;
+	    color: white;
+	}
+	.copy {
+		margin-top: 60px;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}
