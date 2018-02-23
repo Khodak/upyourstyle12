@@ -19,7 +19,15 @@ header {
 	text-align:left;	
 	order: 1;
     -webkit-order: 1;
-    padding: 30px 0 60px;
+    padding: 30px 0 0;
+    position: fixed;
+    top: 0;
+    transition: top 0.4s ease-in-out;
+    width: 100%;
+}
+.nav-up {
+    top: -160px;
+    background-color: rgba(255, 255, 255, 0.5); 
 }
 .top-navigation { 
 	.nav > li > a {
@@ -83,7 +91,14 @@ header {
 .top-navigation .navbar.navbar-default .navbar-nav > li > a {
 	background: transparent;
 }
-
+@media screen and (max-width: 520px){
+	header {
+		position: static;
+	}
+	.content .left-gradient-block {
+		margin-top: 0;
+	}
+}
 @media screen and (max-width: 1200px) {
 	
 }
@@ -100,6 +115,3 @@ header {
 	
 }
 
-@media screen and (max-width: 767px) {
-	
-}

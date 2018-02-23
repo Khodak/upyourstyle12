@@ -156,7 +156,15 @@ header {
   text-align: left;
   order: 1;
   -webkit-order: 1;
-  padding: 30px 0 60px; }
+  padding: 30px 0 0;
+  position: fixed;
+  top: 0;
+  transition: top 0.4s ease-in-out;
+  width: 100%; }
+
+.nav-up {
+  top: -160px;
+  background-color: rgba(255, 255, 255, 0.5); }
 
 .top-navigation .nav > li > a {
   padding: 1px 0 !important; }
@@ -201,6 +209,12 @@ header {
 .top-navigation .navbar.navbar-default .navbar-nav > li > a {
   background: transparent; }
 
+@media screen and (max-width: 520px) {
+  header {
+    position: static; }
+
+  .content .left-gradient-block {
+    margin-top: 0; } }
 /*
 ================================================================================
 |                                     FOOTER                                   |
@@ -385,7 +399,8 @@ h3 {
   min-height: 700px; }
 
 .left-gradient-block {
-  background: url(../img/gradient-left.png) no-repeat center left; }
+  background: url(../img/gradient-left.png) no-repeat center left;
+  margin-top: 200px; }
   .left-gradient-block p {
     max-width: 255px; }
 
