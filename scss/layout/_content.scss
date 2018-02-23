@@ -44,22 +44,14 @@ p{
 	font-weight: 400;	
 }
 h1{	
-	@include font($font-size-h1,$line-height-h1,$title-color);
-	font-family: $title-font-family;
-	padding: 0 0 55px 0;
-	font-weight: 500;
+	@include font($font-size-h1-mobile,$line-height-h1-mobile,$title-color);
 }
 h2{
-	@include font($font-size-h2,$line-height-h2,$title-color);
-	font-family: $title-font-family;
-	padding: 0 0 55px 0;
-	font-weight: 500;	
+	@include font($font-size-h2-mobile,$line-height-h2-mobile,$title-color);
+
 }
 h3{
-	@include font($font-size-h3,$line-height-h3,$title-color);
-	font-family: $title-font-family;
-	padding: 0 0 15px 0;
-	font-weight: 500;
+	@include font($font-size-h3-mobile,$line-height-h3-mobile,$title-color);
 }
 
 /* text position */
@@ -108,6 +100,8 @@ h3{
     	background: url(../img/play-btn.png) no-repeat left center;
     	padding: 10px 0 10px 30px;
     	background-size: 25px;
+    	margin-top: 5px;
+    	display: block;
     }
 }
 .page-section {
@@ -155,7 +149,32 @@ hr {
 .targeting-pic {
 	margin-top: 40px;
 }
-
+.modal-full-width{
+	.modal-header {
+		border-bottom:0;
+	}
+	.modal-title {
+		font-size: 30px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.modal-content {
+		border-radius: 0;
+	}
+	.close {
+		font-size: 40px;
+    	font-weight: normal;
+	}
+	.thumbnail {
+		.btn-gradient {
+			display: block;
+			margin: 30px auto 0; 
+		}
+		.caption {
+			min-height: 150px;
+		}
+	}
+} 
 
 
 
@@ -168,7 +187,24 @@ hr {
 }
 
 @media screen and (min-width: 992px){
-	
+	h1{	
+		@include font($font-size-h1,$line-height-h1,$title-color);
+		font-family: $title-font-family;
+		padding: 0 0 55px 0;
+		font-weight: 500;
+	}
+	h2{
+		@include font($font-size-h2,$line-height-h2,$title-color);
+		font-family: $title-font-family;
+		padding: 0 0 55px 0;
+		font-weight: 500;	
+	}
+	h3{
+		@include font($font-size-h3,$line-height-h3,$title-color);
+		font-family: $title-font-family;
+		padding: 0 0 15px 0;
+		font-weight: 500;
+	}
 }
 
 @media screen and (max-width: 991px) {

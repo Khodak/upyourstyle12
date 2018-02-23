@@ -254,6 +254,12 @@ footer {
   .site-footer .copy {
     margin-top: 60px; }
 
+@media screen and (max-width: 767px) {
+  .site-footer h2 {
+    margin-bottom: 15px; }
+
+  img {
+    width: 100%; } }
 .main-wrapper {
   padding: 0 0 0 0;
   min-width: 320px;
@@ -298,28 +304,19 @@ p {
   font-weight: 400; }
 
 h1 {
-  font-size: 96px;
-  line-height: 102px;
-  color: #000;
-  font-family: "Open Sans", sans-serif;
-  padding: 0 0 55px 0;
-  font-weight: 500; }
+  font-size: 42px;
+  line-height: 48px;
+  color: #000; }
 
 h2 {
-  font-size: 96px;
-  line-height: 102px;
-  color: #000;
-  font-family: "Open Sans", sans-serif;
-  padding: 0 0 55px 0;
-  font-weight: 500; }
+  font-size: 42px;
+  line-height: 48px;
+  color: #000; }
 
 h3 {
-  font-size: 48px;
-  line-height: 52px;
-  color: #000;
-  font-family: "Open Sans", sans-serif;
-  padding: 0 0 15px 0;
-  font-weight: 500; }
+  font-size: 32px;
+  line-height: 36px;
+  color: #000; }
 
 /* text position */
 .text-left {
@@ -379,7 +376,9 @@ h3 {
     color: #000;
     background: url(../img/play-btn.png) no-repeat left center;
     padding: 10px 0 10px 30px;
-    background-size: 25px; }
+    background-size: 25px;
+    margin-top: 5px;
+    display: block; }
 
 .page-section {
   padding: 30px 0;
@@ -421,11 +420,56 @@ hr {
 .targeting-pic {
   margin-top: 40px; }
 
+.modal-full-width .modal-header {
+  border-bottom: 0; }
+.modal-full-width .modal-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center; }
+.modal-full-width .modal-content {
+  border-radius: 0; }
+.modal-full-width .close {
+  font-size: 40px;
+  font-weight: normal; }
+.modal-full-width .thumbnail .btn-gradient {
+  display: block;
+  margin: 30px auto 0; }
+.modal-full-width .thumbnail .caption {
+  min-height: 150px; }
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   body {
     min-height: 100hv;
     width: 100%;
     display: flex;
     flex-direction: column; } }
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 96px;
+    line-height: 102px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    padding: 0 0 55px 0;
+    font-weight: 500; }
+
+  h2 {
+    font-size: 96px;
+    line-height: 102px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    padding: 0 0 55px 0;
+    font-weight: 500; }
+
+  h3 {
+    font-size: 48px;
+    line-height: 52px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    padding: 0 0 15px 0;
+    font-weight: 500; } }
+@media screen and (min-width: 992px) {
+  .modal-full-width .modal-dialog {
+    width: 1200px;
+    margin: 30px auto; } }
 
 /*# sourceMappingURL=style.css.map */
