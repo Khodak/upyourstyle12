@@ -105,7 +105,7 @@ h3{
     }
 }
 .page-section {
-	padding: 30px 0;
+	padding: 37px 0;
 	min-height: 700px;
 }
 .left-gradient-block {
@@ -114,8 +114,13 @@ h3{
 		max-width: 255px;
 	}
 }
+.right-gradient-block {
+	background: url(../img/gradient-right-purple.png) no-repeat center right;
+}
 hr {
 	border-top: 2px solid #7d7d7d;
+	width: 80%;
+    margin-left: 0;
 }
 .red-fredient-block {
 	background-image: linear-gradient(to left, #fe8863, #d53148);
@@ -170,12 +175,45 @@ hr {
 			display: block;
 			margin: 30px auto 0; 
 		}
-		.caption {
-			min-height: 150px;
-		}
 	}
 } 
 
+.row-flex, .row-flex > div[class*='col-'] {  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+.row-flex-wrap {
+	-webkit-flex-flow: row wrap;
+    align-content: flex-start;
+    flex:0;
+}
+
+.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+	 margin:-.2px; /* hack adjust for wrapping */
+}
+
+.container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div {
+	width:100%;
+}
+
+
+.flex-col {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 100%;
+	flex-flow: column nowrap;
+}
+
+.flex-grow {
+	display: flex;
+    -webkit-flex: 2;
+    flex: 2;
+}
 
 
 
@@ -192,12 +230,14 @@ hr {
 		font-family: $title-font-family;
 		padding: 0 0 55px 0;
 		font-weight: 500;
+		margin-top: -10px;
 	}
 	h2{
 		@include font($font-size-h2,$line-height-h2,$title-color);
 		font-family: $title-font-family;
 		padding: 0 0 55px 0;
-		font-weight: 500;	
+		font-weight: 500;
+		margin-top: -10px;
 	}
 	h3{
 		@include font($font-size-h3,$line-height-h3,$title-color);
