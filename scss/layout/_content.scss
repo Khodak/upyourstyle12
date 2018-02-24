@@ -86,10 +86,13 @@ h3{
     .card-header {
     	.btn {
     		padding: 0;
-    		color: #000;
-    		font-size: 14px;
-  			font-weight: bold;
-  			background: transparent;
+		    color: #000;
+		    font-size: 13px;
+		    font-weight: bold;
+		    background: transparent;
+		    white-space: normal;
+		    max-width: 286px;
+		    text-align: left;
     	}	
     }
     .card-body {
@@ -108,15 +111,20 @@ h3{
 	padding: 37px 0;
 	min-height: 700px;
 }
+.after-header {
+	margin-top: 200px;
+}
 .left-gradient-block {
 	background: url(../img/gradient-left.png) no-repeat center left;
-	margin-top: 200px;
 	p {
 		max-width: 255px;
 	}
 }
 .right-gradient-block {
 	background: url(../img/gradient-right-purple.png) no-repeat center right;
+}
+.full-wdth {
+	width: 100%;
 }
 hr {
 	border-top: 2px solid #7d7d7d;

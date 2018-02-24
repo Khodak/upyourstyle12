@@ -164,7 +164,10 @@ header {
 
 .nav-up {
   top: -160px;
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.nav-down {
+  background-color: rgba(255, 255, 255, 0.7); }
 
 .top-navigation .nav > li > a {
   padding: 1px 0 !important; }
@@ -213,7 +216,7 @@ header {
   header {
     position: static; }
 
-  .content .left-gradient-block {
+  .content .after-header {
     margin-top: 0; } }
 /*
 ================================================================================
@@ -381,9 +384,12 @@ h3 {
   .content .card-header .btn {
     padding: 0;
     color: #000;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    background: transparent; }
+    background: transparent;
+    white-space: normal;
+    max-width: 286px;
+    text-align: left; }
   .content .card-body {
     margin-top: 10px; }
   .content .play-btn {
@@ -398,14 +404,19 @@ h3 {
   padding: 37px 0;
   min-height: 700px; }
 
-.left-gradient-block {
-  background: url(../img/gradient-left.png) no-repeat center left;
+.after-header {
   margin-top: 200px; }
+
+.left-gradient-block {
+  background: url(../img/gradient-left.png) no-repeat center left; }
   .left-gradient-block p {
     max-width: 255px; }
 
 .right-gradient-block {
   background: url(../img/gradient-right-purple.png) no-repeat center right; }
+
+.full-wdth {
+  width: 100%; }
 
 hr {
   border-top: 2px solid #7d7d7d;
@@ -524,7 +535,19 @@ hr {
 @media screen and (min-width: 992px) {
   .modal-full-width .modal-dialog {
     width: 1200px;
-    margin: 30px auto; } }
+    margin: 30px auto; }
+
+  .mrg-bt-30 {
+    margin-bottom: 30px; } }
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    float: right; }
+
+  h1, h2 {
+    margin-bottom: 30px; }
+
+  .targeting-pic {
+    margin-bottom: 20px; } }
 @media screen and (max-width: 767px) {
   h1 {
     margin-bottom: 20px; }

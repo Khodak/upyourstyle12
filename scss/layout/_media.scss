@@ -2,6 +2,7 @@
 	.page-section {
 		min-height: 400px;
 	}
+
 }
 
 @media screen and (min-width: 992px){
@@ -9,11 +10,22 @@
 	    width: 1200px;
 	    margin: 30px auto;
 	}
+	.mrg-bt-30 {
+		margin-bottom: 30px;
+	}
 
 }
 
 @media screen and (max-width: 991px) {
-	
+	.navbar-collapse {
+		float: right;
+	}
+	h1, h2 {
+		margin-bottom: 30px;
+	}
+	.targeting-pic {
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
